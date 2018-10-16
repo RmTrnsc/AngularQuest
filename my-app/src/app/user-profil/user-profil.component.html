@@ -1,0 +1,13 @@
+<img src={{User.img}}/>
+<p>Nom : {{User.name}}</p>
+<p>Prenom : {{User.firstName}}</p>
+<p [hidden] = "active">Age : {{User.age}}</p>
+<p>{{User.quote}}</p>
+
+<div>
+    <span class="badge"><p>{{quote}}</p></span><br>
+    <input [(ngModel)]=quote name="name">
+</div>
+<button (click)="active = !active">afficher/masquer mon âge</button>
+
+

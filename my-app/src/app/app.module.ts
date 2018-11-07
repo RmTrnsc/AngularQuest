@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { UserProfilComponent } from './user-profil/user-profil.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent} from './sign-up/sign-up.component';
+import { HightLightDirective } from './hight-light.directive';
+import { ShowMoviesDirective } from './show-movies.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfilComponent,
     MenuComponent,
-    SignUpComponent
+    SignUpComponent,
+    HightLightDirective,
+    ShowMoviesDirective
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,7 @@ import { SignUpComponent} from './sign-up/sign-up.component';
     RouterModule.forRoot(
       [
         {path: "sign-up", component: SignUpComponent, pathMatch: "full"},
-        {path: "menu", component: MenuComponent, pathMatch: "full",}
+        {path: "menu", component: MenuComponent, pathMatch: "full"},
         {path: "user-profil", component: UserProfilComponent, pathMatch: "full"},
         {path: "", redirectTo: "user-profil", pathMatch: "full"}
       ],

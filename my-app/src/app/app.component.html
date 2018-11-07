@@ -1,7 +1,18 @@
+<h1 >
+  {{ title }}
+ </h1>
 
-  <h1>
-   {{ title }}
-  </h1>
- <app-menu></app-menu>
-<router-outlet></router-outlet>
+
+<ul *appShowMovies="ShowMoviesDirective">
+  <li id='favoriteFilm' appHightLight='color' >Star Wars et la Revanche des Siths</li>
+  <li >Inception</li>
+  <li>Inglorious Basterds</li>
+  <li >Bohemian Rhapsody</li>
+</ul>
+
+
+
+  
+ <!-- <app-menu></app-menu>
+<router-outlet></router-outlet> -->
 

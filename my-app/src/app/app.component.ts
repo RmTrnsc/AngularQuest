@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title:string = 'Fiche de contact';
+  public title:string = 'My movies list';
+
+  public color:string;
+
+  ShowMoviesDirective: boolean = true;
 }
